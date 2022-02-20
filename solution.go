@@ -18,11 +18,11 @@ const SidesCircle SidesNumber = 0
 func CalcSquare(sideLen float64, sidesNum SidesNumber) float64 {
 	pi := math.Pi
 	if sidesNum == 3 {
-		return (math.Pow(sideLen, 2) * sideLen * math.Sqrt(3))/4
+		return (math.Pow(sideLen, 2) * math.Sqrt(3))/4
 	} else if sidesNum == 4 {
-	return math.Pow(sideLen, 2)
+		return math.Pow(sideLen, 2)
 	} else if sidesNum == 0 {
-	return math.Pow(sideLen, 2) * pi
+		return math.Pow(sideLen, 2) * pi
 	}
 	return 0.0
 }
